@@ -3,11 +3,14 @@ import os
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
+import os
+import openai
+from dotenv import load_dotenv
 
 load_dotenv()
 
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or DEFAULT_OPENAI_API_KEY
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+openai.api_key = OPENAI_API_KEY
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY") or DEFAULT_NEWSAPI_KEY
 
 try:
