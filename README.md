@@ -1,2 +1,2 @@
 # News-Summarizer
-Ai powered news summarizer app using python
+This is a news summarizer

@@ -1,0 +1,5 @@
+streamlit
+openai
+newsapi-python
+python-dotenv
+pandas
