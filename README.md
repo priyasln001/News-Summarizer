@@ -12,5 +12,23 @@ AI powered news summarizer app using Python.
 
 ## How to Run
 1. Clone the repo
-   ```bash
+   ```bash'
    git clone https://github.com/priyasln001/News-Summarizer.git
+   ```
+ 
+ 2. Install requirements
+ ```bash
+ pip install -r requirements.txt
+ ```
+ 
+ 3. Create .env file and add API keys
+ ```bash
+ NEWS_API_KEY=your_newsapi_key
+ GEMINI_API_KEY=your_gemini_key
+ ```
+
+ 4. Run the app
+ ```bash
+streamlit run app.py
+ ```
+  
