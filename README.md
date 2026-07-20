@@ -5,10 +5,10 @@ AI powered news summarizer app using Python.
 ## Features
 - Fetch latest news using News API
 - Generate short AI summary of any article
-- Clean and simple interface with Flask
+- Clean and simple interface with Streamlit
 
 ## Tech Stack
-`Python` `Flask` `News API` `Google Generative AI`
+`Python` `Streamlit` `News API` `Google Generative AI`
 
 ## How to Run
 1. Clone the repo
