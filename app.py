@@ -1,21 +1,17 @@
 import streamlit as st
 import requests
 from datetime import datetime
-import openai
-from openai import OpenAIError, RateLimitError, AuthenticationError
+from openai import OpenAI, OpenAIError, RateLimitError, AuthenticationError
 
 # Streamlit Secrets se key lo
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 NEWSAPI_KEY = st.secrets["NEWSAPI_KEY"]
 
-client = openai.OpenAI(api_key=OPENAI_API_KEY)
-
-
-from openai import OpenAIError, RateLimitError, AuthenticationError
-
-client = openai.OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 st.set_page_config(page_title="AI News Summarizer", page_icon="📰", layout="wide")
+st.title("📰 AI News Summarizer")
+st.caption("Enter a topic and get the latest headlines with AI-generated bullet summaries.")n="📰", layout="wide")
 
 st.title("📰 AI News Summarizer")
 st.caption("Enter a topic and get the latest headlines with AI-generated bullet summaries.")
