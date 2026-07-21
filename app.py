@@ -1,17 +1,14 @@
 import streamlit as st
-import os
 import requests
 from datetime import datetime
-from dotenv import load_dotenv
-import os
 import openai
-from dotenv import load_dotenv
+from openai import OpenAIError, RateLimitError, AuthenticationError
 
-load_dotenv()
+# Streamlit Secrets se key lo
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+NEWSAPI_KEY = st.secrets["NEWSAPI_KEY"]
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-openai.api_key = OPENAI_API_KEY
-NEWSAPI_KEY = os.getenv("NEWSAPI_KEY") or DEFAULT_NEWSAPI_KEY
+client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 
 from openai import OpenAIError, RateLimitError, AuthenticationError
