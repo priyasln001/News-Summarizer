@@ -1,5 +1,5 @@
 streamlit
-openai
+openai==1.51.0
 requests
 newsapi-python
 python-dotenv
