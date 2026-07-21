@@ -1,7 +1,5 @@
 streamlit
-openai==1.51.3
-httpx==0.27.2
-requests
+openai
 newsapi-python
 python-dotenv
 pandas
