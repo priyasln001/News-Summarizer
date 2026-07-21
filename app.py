@@ -11,9 +11,6 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 st.set_page_config(page_title="AI News Summarizer", page_icon="📰", layout="wide")
 st.title("📰 AI News Summarizer")
-st.caption("Enter a topic and get the latest headlines with AI-generated bullet summaries.")n="📰", layout="wide")
-
-st.title("📰 AI News Summarizer")
 st.caption("Enter a topic and get the latest headlines with AI-generated bullet summaries.")
 
 # Sidebar
