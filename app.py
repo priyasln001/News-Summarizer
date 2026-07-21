@@ -13,13 +13,10 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY") or DEFAULT_NEWSAPI_KEY
 
-try:
-    import openai
-    from openai.error import OpenAIError, RateLimitError, AuthenticationError
-except ImportError as exc:
-    raise ImportError("OpenAI is required to run this app. Install with 'pip install openai'.") from exc
 
-openai.api_key = OPENAI_API_KEY or None
+from openai import OpenAIError, RateLimitError, AuthenticationError
+
+client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 st.set_page_config(page_title="AI News Summarizer", page_icon="📰", layout="wide")
 
