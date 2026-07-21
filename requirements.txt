@@ -1,5 +1,6 @@
 streamlit
-google-generativeai
+openai
+requests
 newsapi-python
 python-dotenv
 pandas
